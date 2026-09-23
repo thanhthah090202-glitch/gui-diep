@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gửi Diệp 💗</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;overflow:hidden;min-height:100vh;font-family:"Segoe UI",Arial,sans-serif;background:radial-gradient(circle,#fff8fb,#ffdce9)}
+#opening{position:fixed;inset:0;z-index:100;display:flex;justify-content:center;align-items:center;flex-direction:column;background:linear-gradient(135deg,#ffd6e5,#fff5f8);transition:1s}
+#opening h1{color:#e83e67;margin-bottom:25px;text-align:center;font-size:28px}
+.open-heart{font-size:80px;cursor:pointer;animation:pulse 1.2s infinite}
+#opening p{color:#777}
+#main{opacity:0;transition:2s;min-height:100vh}
+.title{position:absolute;top:22px;width:100%;text-align:center;color:#e83e67;font-size:30px;font-weight:bold;z-index:20}
+.letter{position:absolute;z-index:10;left:7%;top:50%;transform:translateY(-50%);width:45%;max-width:520px;padding:30px;background:rgba(255,255,255,.9);border-radius:22px;box-shadow:0 10px 35px rgba(220,70,110,.18)}
+.letter h2{color:#e83e67;margin-top:0}
+.letter p{color:#555;font-size:17px;line-height:1.65;margin:13px 0;opacity:0;transform:translateY(15px)}
+.letter p.show{animation:textIn 1s forwards}
+.signature{color:#e83e67!important;font-weight:bold}
+.tree{position:absolute;right:6%;bottom:4%;width:45%;height:80%}
+.trunk{position:absolute;bottom:0;left:50%;width:28px;height:230px;background:linear-gradient(to right,#704020,#a96738,#704020);border-radius:20px;transform:translateX(-50%)}
+.branch{position:absolute;height:15px;background:#804725;border-radius:15px;transform-origin:left center}
+.b1{width:150px;left:50%;bottom:170px;transform:rotate(-35deg)}
+.b2{width:140px;left:49%;bottom:140px;transform:rotate(35deg)}
+.b3{width:120px;left:50%;bottom:105px;transform:rotate(-45deg)}
+.heart{position:absolute;font-size:19px;animation:heartBeat 2s infinite}
+.h01{left:18%;top:25%}.h02{left:28%;top:18%}.h03{left:40%;top:15%}.h04{left:52%;top:19%}.h05{left:65%;top:26%}
+.h06{left:10%;top:35%}.h07{left:23%;top:32%}.h08{left:36%;top:29%}.h09{left:49%;top:32%}.h10{left:62%;top:33%}.h11{left:76%;top:38%}
+.h12{left:16%;top:45%}.h13{left:29%;top:42%}.h14{left:42%;top:40%}.h15{left:55%;top:43%}.h16{left:68%;top:46%}
+.h17{left:25%;top:53%}.h18{left:39%;top:51%}.h19{left:53%;top:54%}.h20{left:65%;top:55%}
+.h21{left:35%;top:62%}.h22{left:49%;top:61%}.h23{left:59%;top:64%}.h24{left:43%;top:70%}
+.floating{position:fixed;bottom:-50px;font-size:22px;animation:fly 7s linear infinite;opacity:0;z-index:30}
+.f1{left:8%}.f2{left:20%;animation-delay:2s}.f3{left:35%;animation-delay:4s}.f4{left:58%;animation-delay:1s}.f5{left:75%;animation-delay:3s}.f6{left:90%;animation-delay:5s}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+@keyframes heartBeat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@keyframes textIn{to{opacity:1;transform:translateY(0)}}
+@keyframes fly{0%{bottom:-50px;opacity:0;transform:rotate(0) scale(.5)}15%{opacity:1}100%{bottom:110%;opacity:0;transform:rotate(30deg) scale(1.4)}}
+@media(max-width:700px){
+.title{font-size:25px;top:12px}
+.letter{left:5%;top:37%;width:90%;padding:20px}
+.letter h2{font-size:21px}.letter p{font-size:14px;line-height:1.55}
+.tree{right:-8%;bottom:-3%;width:65%;height:45%;transform:scale(.75)}
+.trunk{height:150px}
+}
+</style>
+</head>
+<body>
+
+<div id="opening">
+  <h1>Có một điều muốn gửi Diệp 💌</h1>
+  <div class="open-heart" onclick="openLetter()">❤️</div>
+  <p>Chạm vào trái tim để mở thư</p>
+</div>
+
+<div id="main">
+  <div class="title">💗 Gửi Diệp 💗</div>
+
+  <div class="letter">
+    <h2>Chúc mừng Diệp 🎓</h2>
+    <p>Chúc mừng Diệp đã bắt đầu một hành trình mới tại <b>Đại học Kiến Trúc</b> 🎉</p>
+    <p>Mong những năm tháng đại học của Diệp sẽ có thật nhiều niềm vui, những người bạn tốt và thật nhiều kỷ niệm đáng nhớ.</p>
+    <p>Chúc Diệp học thật tốt, luôn giữ được sự nhiệt huyết và đừng để bài tập với deadline làm mất đi những khoảnh khắc vui vẻ nha 😆</p>
+    <p class="signature">Chúc Diệp có một hành trình thật đẹp ❤️<br>— Một người bạn —</p>
+  </div>
+
+  <div class="tree">
+    <div class="trunk"></div>
+    <div class="branch b1"></div><div class="branch b2"></div><div class="branch b3"></div>
+    <span class="heart h01">❤️</span><span class="heart h02">💗</span><span class="heart h03">❤️</span><span class="heart h04">💖</span><span class="heart h05">❤️</span>
+    <span class="heart h06">💗</span><span class="heart h07">❤️</span><span class="heart h08">💖</span><span class="heart h09">❤️</span><span class="heart h10">💗</span><span class="heart h11">❤️</span>
+    <span class="heart h12">❤️</span><span class="heart h13">💖</span><span class="heart h14">❤️</span><span class="heart h15">💗</span><span class="heart h16">❤️</span>
+    <span class="heart h17">💗</span><span class="heart h18">❤️</span><span class="heart h19">💖</span><span class="heart h20">❤️</span>
+    <span class="heart h21">❤️</span><span class="heart h22">💗</span><span class="heart h23">❤️</span><span class="heart h24">💖</span>
+  </div>
+
+  <div class="floating f1">❤️</div><div class="floating f2">💗</div><div class="floating f3">💕</div>
+  <div class="floating f4">❤️</div><div class="floating f5">💖</div><div class="floating f6">💗</div>
+</div>
+
+<script>
+function openLetter(){
+  document.getElementById("opening").style.opacity="0";
+  setTimeout(()=>{
+    document.getElementById("opening").style.display="none";
+    document.getElementById("main").style.opacity="1";
+    document.querySelectorAll(".letter p").forEach((p,i)=>{
+      setTimeout(()=>p.classList.add("show"),500+i*1100);
+    });
+  },900);
+}
+</script>
+</body>
+</html>
